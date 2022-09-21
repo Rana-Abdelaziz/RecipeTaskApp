@@ -1,0 +1,6 @@
+framework module Pods_RecipeTaskApp {
+  umbrella header "Pods-RecipeTaskApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
