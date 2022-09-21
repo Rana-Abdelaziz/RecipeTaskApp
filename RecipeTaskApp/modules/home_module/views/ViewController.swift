@@ -62,7 +62,7 @@ class ViewController: UIViewController ,UITableViewDelegate , UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! RecipeTableViewCell
         cell.recipeTilte.text = filteredList[indexPath.row].recipe?.label
-        cell.recipeTilte.text = filteredList[indexPath.row].recipe?.source
+        cell.recipeSource.text = filteredList[indexPath.row].recipe?.source
         
         let url = (filteredList[indexPath.row].recipe?.image)!
         cell.recipeImage.kf.setImage(with: URL(string: url), placeholder: UIImage(named: "youtube.png"), options: nil, progressBlock: nil, completionHandler: nil)
